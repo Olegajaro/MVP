@@ -13,7 +13,6 @@
 		10E5223127A2C3E600DACC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E5222F27A2C3E600DACC4A /* Main.storyboard */; };
 		10E5223327A2C3E700DACC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E5223227A2C3E700DACC4A /* Assets.xcassets */; };
 		10E5223627A2C3E700DACC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E5223427A2C3E700DACC4A /* LaunchScreen.storyboard */; };
-		10E5224127A2C3E700DACC4A /* MVPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5224027A2C3E700DACC4A /* MVPTests.swift */; };
 		10E5225A27A2C42400DACC4A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5225927A2C42400DACC4A /* Person.swift */; };
 		10E5225C27A2C45500DACC4A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5225B27A2C45500DACC4A /* MainPresenter.swift */; };
 		10E5226227A2C82C00DACC4A /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E5226127A2C82C00DACC4A /* MainView.xib */; };
@@ -41,7 +40,6 @@
 		10E5223527A2C3E700DACC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10E5223727A2C3E700DACC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10E5223C27A2C3E700DACC4A /* MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10E5224027A2C3E700DACC4A /* MVPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPTests.swift; sourceTree = "<group>"; };
 		10E5225927A2C42400DACC4A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		10E5225B27A2C45500DACC4A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		10E5226127A2C82C00DACC4A /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
@@ -89,10 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				10E5225D27A2C7DA00DACC4A /* Main */,
-				10E5222F27A2C3E600DACC4A /* Main.storyboard */,
-				10E5223227A2C3E700DACC4A /* Assets.xcassets */,
-				10E5223427A2C3E700DACC4A /* LaunchScreen.storyboard */,
-				10E5223727A2C3E700DACC4A /* Info.plist */,
+				10E5226827A2D28100DACC4A /* Files */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -101,7 +96,6 @@
 			isa = PBXGroup;
 			children = (
 				10E5226527A2CD0800DACC4A /* TestMainModule */,
-				10E5224027A2C3E700DACC4A /* MVPTests.swift */,
 			);
 			path = MVPTests;
 			sourceTree = "<group>";
@@ -150,6 +144,17 @@
 				10E5226627A2CD8C00DACC4A /* MainPresenterTest.swift */,
 			);
 			path = TestMainModule;
+			sourceTree = "<group>";
+		};
+		10E5226827A2D28100DACC4A /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				10E5222F27A2C3E600DACC4A /* Main.storyboard */,
+				10E5223227A2C3E700DACC4A /* Assets.xcassets */,
+				10E5223427A2C3E700DACC4A /* LaunchScreen.storyboard */,
+				10E5223727A2C3E700DACC4A /* Info.plist */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,7 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10E5224127A2C3E700DACC4A /* MVPTests.swift in Sources */,
 				10E5226727A2CD8C00DACC4A /* MainPresenterTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,7 +430,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_FILE = MVP/Files/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -453,7 +457,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MVP/Info.plist;
+				INFOPLIST_FILE = MVP/Files/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

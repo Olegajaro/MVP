@@ -37,18 +37,18 @@ class Test: XCTestCase {
         presenter = nil
     }
     
-    func testModuleIsNotNil()  {
+    func testModuleIsNotNil() throws {
         XCTAssertNotNil(view, "view is not nil")
         XCTAssertNotNil(person, "person is not nil")
         XCTAssertNotNil(presenter, "presenter is not nil")
     }
     
-    func testView() {
+    func testView() throws {
         presenter.showGreeting()
         XCTAssertEqual(view.titleTest, "Baz Bar")
     }
     
-    func testPersonModel() {
+    func testPersonModel() throws {
         XCTAssertEqual(person.firstName, "Baz")
         XCTAssertEqual(person.lastName, "Bar")
     }
