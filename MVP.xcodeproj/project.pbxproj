@@ -13,11 +13,15 @@
 		10E5223127A2C3E600DACC4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E5222F27A2C3E600DACC4A /* Main.storyboard */; };
 		10E5223327A2C3E700DACC4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10E5223227A2C3E700DACC4A /* Assets.xcassets */; };
 		10E5223627A2C3E700DACC4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10E5223427A2C3E700DACC4A /* LaunchScreen.storyboard */; };
-		10E5225A27A2C42400DACC4A /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5225927A2C42400DACC4A /* Person.swift */; };
+		10E5225A27A2C42400DACC4A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5225927A2C42400DACC4A /* Comment.swift */; };
 		10E5225C27A2C45500DACC4A /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5225B27A2C45500DACC4A /* MainPresenter.swift */; };
 		10E5226227A2C82C00DACC4A /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E5226127A2C82C00DACC4A /* MainView.xib */; };
 		10E5226427A2C97A00DACC4A /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5226327A2C97A00DACC4A /* ModuleBuilder.swift */; };
 		10E5226727A2CD8C00DACC4A /* MainPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5226627A2CD8C00DACC4A /* MainPresenterTest.swift */; };
+		10E5226A27A3DDE400DACC4A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5226927A3DDE400DACC4A /* NetworkService.swift */; };
+		10E5226E27A3E65100DACC4A /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5226D27A3E65100DACC4A /* DetailPresenter.swift */; };
+		10E5227727A3EF1900DACC4A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10E5227527A3EF1900DACC4A /* DetailViewController.swift */; };
+		10E5227827A3EF1900DACC4A /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10E5227627A3EF1900DACC4A /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,11 +44,15 @@
 		10E5223527A2C3E700DACC4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10E5223727A2C3E700DACC4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10E5223C27A2C3E700DACC4A /* MVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		10E5225927A2C42400DACC4A /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		10E5225927A2C42400DACC4A /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		10E5225B27A2C45500DACC4A /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		10E5226127A2C82C00DACC4A /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		10E5226327A2C97A00DACC4A /* ModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		10E5226627A2CD8C00DACC4A /* MainPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTest.swift; sourceTree = "<group>"; };
+		10E5226927A3DDE400DACC4A /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		10E5226D27A3E65100DACC4A /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		10E5227527A3EF1900DACC4A /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		10E5227627A3EF1900DACC4A /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +94,12 @@
 		10E5222827A2C3E600DACC4A /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				10E5225D27A2C7DA00DACC4A /* Main */,
+				10E5222927A2C3E600DACC4A /* AppDelegate.swift */,
+				10E5222B27A2C3E600DACC4A /* SceneDelegate.swift */,
+				10E5226327A2C97A00DACC4A /* ModuleBuilder.swift */,
+				10E5226B27A3DE1200DACC4A /* Services */,
+				10E5225D27A2C7DA00DACC4A /* MainModule */,
+				10E5226C27A3E63400DACC4A /* DetailModule */,
 				10E5226827A2D28100DACC4A /* Files */,
 			);
 			path = MVP;
@@ -100,23 +113,20 @@
 			path = MVPTests;
 			sourceTree = "<group>";
 		};
-		10E5225D27A2C7DA00DACC4A /* Main */ = {
+		10E5225D27A2C7DA00DACC4A /* MainModule */ = {
 			isa = PBXGroup;
 			children = (
-				10E5222927A2C3E600DACC4A /* AppDelegate.swift */,
-				10E5222B27A2C3E600DACC4A /* SceneDelegate.swift */,
-				10E5226327A2C97A00DACC4A /* ModuleBuilder.swift */,
 				10E5225E27A2C7E700DACC4A /* Model */,
 				10E5225F27A2C7EC00DACC4A /* View */,
 				10E5226027A2C7F100DACC4A /* Presenter */,
 			);
-			path = Main;
+			path = MainModule;
 			sourceTree = "<group>";
 		};
 		10E5225E27A2C7E700DACC4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				10E5225927A2C42400DACC4A /* Person.swift */,
+				10E5225927A2C42400DACC4A /* Comment.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -155,6 +165,40 @@
 				10E5223727A2C3E700DACC4A /* Info.plist */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		10E5226B27A3DE1200DACC4A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				10E5226927A3DDE400DACC4A /* NetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		10E5226C27A3E63400DACC4A /* DetailModule */ = {
+			isa = PBXGroup;
+			children = (
+				10E5227027A3E7D000DACC4A /* View */,
+				10E5226F27A3E7C500DACC4A /* Presenter */,
+			);
+			path = DetailModule;
+			sourceTree = "<group>";
+		};
+		10E5226F27A3E7C500DACC4A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				10E5226D27A3E65100DACC4A /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		10E5227027A3E7D000DACC4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				10E5227527A3EF1900DACC4A /* DetailViewController.swift */,
+				10E5227627A3EF1900DACC4A /* DetailViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +284,7 @@
 			files = (
 				10E5223627A2C3E700DACC4A /* LaunchScreen.storyboard in Resources */,
 				10E5226227A2C82C00DACC4A /* MainView.xib in Resources */,
+				10E5227827A3EF1900DACC4A /* DetailViewController.xib in Resources */,
 				10E5223327A2C3E700DACC4A /* Assets.xcassets in Resources */,
 				10E5223127A2C3E600DACC4A /* Main.storyboard in Resources */,
 			);
@@ -259,12 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10E5227727A3EF1900DACC4A /* DetailViewController.swift in Sources */,
 				10E5222E27A2C3E600DACC4A /* MainViewController.swift in Sources */,
 				10E5222A27A2C3E600DACC4A /* AppDelegate.swift in Sources */,
-				10E5225A27A2C42400DACC4A /* Person.swift in Sources */,
+				10E5225A27A2C42400DACC4A /* Comment.swift in Sources */,
+				10E5226E27A3E65100DACC4A /* DetailPresenter.swift in Sources */,
 				10E5222C27A2C3E600DACC4A /* SceneDelegate.swift in Sources */,
 				10E5225C27A2C45500DACC4A /* MainPresenter.swift in Sources */,
 				10E5226427A2C97A00DACC4A /* ModuleBuilder.swift in Sources */,
+				10E5226A27A3DDE400DACC4A /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
