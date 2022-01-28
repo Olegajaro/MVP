@@ -10,13 +10,13 @@ import XCTest
 
 @testable import MVP
 
-class MockView: MainViewProtocol {
-    var titleTest: String?
-    
-    func setGreeting(greeting: String) {
-        self.titleTest = greeting
-    }
-}
+//class MockView: MainViewProtocol {
+//    var titleTest: String?
+//    
+//    func setGreeting(greeting: String) {
+//        self.titleTest = greeting
+//    }
+//}
 
 class Test: XCTestCase {
 //    var view: MockView!
