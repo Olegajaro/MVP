@@ -17,7 +17,8 @@ class AssemblyModuleBuilder: AssemblyBuilderProtocol {
         let view = MainViewController()
         let networkService = NetworkService()
         let presenter = MainPresenter(view: view,
-                                      networkService: networkService, router: router)
+                                      networkService: networkService,
+                                      router: router)
         view.presenter = presenter
         return view
     }
