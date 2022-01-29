@@ -12,7 +12,7 @@ import XCTest
 
 //class MockView: MainViewProtocol {
 //    var titleTest: String?
-//    
+//
 //    func setGreeting(greeting: String) {
 //        self.titleTest = greeting
 //    }
